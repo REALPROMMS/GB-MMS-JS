@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MMS</title>
+</head>
+
+<body>
+	
+<script>
+	
+'use strict'
+		
+// сложение
+function sum (num1, num2) {
+	return num1 + num2;
+}
+
+// вычетание
+function diff (num1, num2) {
+	return num1 - num2;
+}
+
+
+// умножение
+function incr (num1, num2) {
+	return num1 * num2;
+}
+
+
+// деление
+function div (num1, num2) {
+	return num1 / num2;
+}
+
+
+
+function matOperation(arg1, arg2, operation) {
+	switch (operation) {
+		case "+":
+			return sum(arg1, arg2);
+		case "-":
+			return diff(arg1, arg2);
+		case "/":
+			return div(arg1, arg2);
+		case "*":
+			return incr(arg1, arg2);
+	}	
+}
+
+console.log(matOperation(4, 5, "+"));
+console.log(matOperation(4, 5, "-"));
+console.log(matOperation(4, 5, "*"));
+console.log(matOperation(4, 5, "/"));
+
+</script>
+
+</body>
+
+</html>

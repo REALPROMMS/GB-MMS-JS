@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MMS</title>
+</head>
+
+<body>
+	
+<script>
+	
+'use strict';
+
+let a = +prompt("Придумай положительное первое число");
+let b = +prompt("Придумай положительное второе число");
+
+function Number() {
+	if (a >= 0 && b >= 0) {
+		let diff = a - b
+		alert("разность чисел " + diff)
+	}	else if (a <= 0 && b <= 0) {
+		let incr = a * b
+		alert("произведение чисел " + incr)
+	} else if (a <= 0 && b >= 0) {
+		let sum = a + b
+		alert("сумма чисел " + sum)
+	} else if (a >= 0 && b <= 0) {
+		let sum = a + b
+		alert("сумма чисел " + sum)
+	}
+}
+
+Number();
+		
+</script>
+
+</body>
+
+</html>
