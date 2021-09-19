@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="SASS/style.css">
+	<title>MMS</title>
+
+</head>
+
+
+<body>
+
+<script>
+
+	'use strict'
+
+	function deconstructNumber(num) {
+	if (num > 999 || num < 0) {
+  	console.warn('Число должно быть в диапазоне [0, 999]');
+    return {};
+  }
+  if (!Number.isInteger(num)) {
+  	console.warn('Число должно быть целым');
+    return {};
+  }
+  
+  let str = Math.floor(num).toString();
+  str = '0'.repeat(3 - str.length) + str;
+
+	return {
+  	hundreds: str[0],
+    tens: str[1],
+    units: str[2]
+  }
+}
+
+console.log(deconstructNumber(121)) //units 3, tens 6, hundreds 
+
+</script>
+
+
+
+
+</body>
+
+
+</html>
